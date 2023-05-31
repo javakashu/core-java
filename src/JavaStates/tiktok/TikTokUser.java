@@ -1,19 +1,14 @@
 package JavaStates.tiktok;
 
 public class TikTokUser {
-    /* Username
-       Password
-       Email
-       Phone number
-       Social Provider - Facebook/Google/Apple
-       Social Provider ID
-       User ID
-
-
-
-
-
-
+    /*
+       Username(String)
+       Password(String)
+       Email(String)
+       Phone number(String)
+       Social Provider - Facebook/Google/Apple(String)
+       Social Provider ID(String)
+       User ID(long)
 
      */
 

@@ -1,10 +1,10 @@
 package JavaStates.tiktok;
 
 public class Comment {
-    /* User ID
-       Content
-       Date
-       Number of likes
+    /* User ID(long)
+       Content(String)
+       Date(String)
+       Number of likes(long)
 
 
 
