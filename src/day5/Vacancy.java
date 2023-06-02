@@ -17,6 +17,15 @@ public class Vacancy {
 
         Trainings(list of Training)
 
+        Current Experience
+
+        Experiences(List of Experience)
+
+        References(List of Reference)
+
+        Application
+
+        Applicant Confirmation (Boolean)
 
 
 
