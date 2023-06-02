@@ -11,7 +11,7 @@ public class Vacancy {
         permanent Address (Address)
         Temporary Address (Address)
 
-        Same as permanent
+        Same as permanent (boolean)
 
         Education(list of Education)
 
