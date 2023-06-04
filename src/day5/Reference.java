@@ -3,16 +3,11 @@ package day5;
 public class Reference {
 
     /*
-       Full Name
-       Full Address
-       Phone Number
-
-
-
-
+       Full Name (String)
+       Full Address (String)
+       Phone Number (String)
 
      */
-
 
 
 }

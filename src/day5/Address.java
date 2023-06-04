@@ -8,7 +8,5 @@ public class Address {
         District(String)
         Ward number (int)
 
-
-
      */
 }

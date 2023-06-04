@@ -1,6 +1,6 @@
 package day5;
 
-public class personalInformation {
+public class PersonalInformation {
         /*
              Full Name(String)
              DOB (AD) (String)
@@ -10,11 +10,6 @@ public class personalInformation {
              Grandfather Name (String)
              Citizenship issue District (String)
 
-
-
-
-
          */
-
 
 }

@@ -1,24 +1,21 @@
 package JavaStates;
 
 public class InstagramPost {
-    /* Number of Likes
-       Comments
-       Number of Views
-       Post Type
-       Captions
-       Tag People
-       Location
-       Music
-       Hide Likes and View Count
-       Is Comment Off
-       Hashtags
-       Replies
-
-
+    /*
+       Number of Likes (long)
+       Comments (String)
+       Number of Views (long)
+       Post Type (String)
+       Captions (String)
+       Tag People (String)
+       Location (String)
+       Music (String)
+       Hide Likes and View Count (boolean)
+       Is Comment Off (boolean)
+       Hashtags (String)
+       Replies (String)
 
      */
-
-
 
 
 }
