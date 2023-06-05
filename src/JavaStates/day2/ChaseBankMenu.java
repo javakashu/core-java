@@ -2,12 +2,52 @@ package JavaStates.day2;
 
 public class ChaseBankMenu {
 
-     long menuId;
-     String menuName;
-     String url;
-     boolean isLeaf;
-     long parentMenuId;
-     String slug;
+    private long menuId;
+    private String menuName;
+    private String url;
+    private boolean isLeaf;
+    private long parentMenuId;
+    private String slug;
+
+    // setter for menuId
+    public void setMenuId(long mId){
+        menuId = mId;
+
+    }
+    public long getMenuId(){
+        return menuId;
+    }
+
+    public void setMenuName(String menuName1){
+        menuName = menuName1;
+
+    }
+    public String getMenuName(){
+        return menuName;
+    }
+
+    public void setUrl(String url1){
+        url = url1;
+    }
+    public String getUrl(){
+        return url;
+    }
+
+    public void setIsLeaf(boolean leaf1){
+        isLeaf =leaf1;
+    }
+    public boolean getIsLeaf(){
+        return isLeaf;
+    }
+    public void setParentMenuId(long parentMenuId1){
+        parentMenuId =parentMenuId1;
+    }
+    public long getParentMenuId(){
+        return parentMenuId;
+    }
+    public void setSlug(String slug1){
+        slug=slug1;
+    }
 
     public static void main(String[] args) {
 
@@ -65,8 +105,10 @@ public class ChaseBankMenu {
         bankingSolutionChecking.slug="banking/checking";
         System.out.println(bankingSolutionChecking);
 
-
+       String name = checking.menuName;
+        System.out.println(name);
     }
+
 
     @Override
     public String toString() {
