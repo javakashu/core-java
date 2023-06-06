@@ -9,23 +9,23 @@ public class ChaseBankApplication {
         personal.setMenuId(1);
         //personal.menuName = "Personal";
         personal.setMenuName("Personal");
-       // personal.url = null;
+        // personal.url = null;
         personal.setUrl("www.google.com");
 
-      //  personal.isLeaf = false;
+        //  personal.isLeaf = false;
         personal.setIsLeaf(false);
-       // personal.parentMenuId = 0;
+        // personal.parentMenuId = 0;
         personal.setParentMenuId(0);
-      //  personal.slug = null;
+        //  personal.slug = null;
         personal.setSlug(null);
         System.out.println(personal);
         System.out.println(personal.getUrl());
 
         //long mId = personal.getMenuId();
 
-          ChaseBankMenu checking = new ChaseBankMenu();
+        ChaseBankMenu checking = new ChaseBankMenu();
 //        //checking.menuId = 2;
-          checking.setMenuId(2);
+        checking.setMenuId(2);
 //        checking.menuName = "Checking";
         checking.setMenuName("checking");
 //           checking.url = null;
@@ -37,7 +37,7 @@ public class ChaseBankApplication {
 //        checking.slug = null;
         checking.setSlug(null);
 //        System.out.println(checking);
-        System.out.println(personal.getMenuId());
+        System.out.println(checking.getMenuId());
 //
 //        ChaseBankMenu chooseCheckingAccount = new ChaseBankMenu();
 //        chooseCheckingAccount.menuId = 3;
