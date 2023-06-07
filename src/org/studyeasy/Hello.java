@@ -3,6 +3,25 @@ package org.studyeasy;
 public class Hello {
 
     public static void main(String[] args) {
+        int x = 5, y =5;
+
+        if(x <= y){
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
+//        int mod = 13 % 2;
+//        System.out.println(mod);
+
+        //int x = 10;
+        //System.out.println(++x);
+        // System.out.println(x++);
+        //System.out.println(x--);
+        // System.out.println(--x);
+        //System.out.println(x);
+        //System.out.println(x);
+
+
 
 //        int y = 65000;
 //        short x =(short)y;
@@ -31,9 +50,6 @@ public class Hello {
 
 
     }
-
-
-
 
 
 }

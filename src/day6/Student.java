@@ -1,5 +1,8 @@
 package day6;
 
+
+
+//Student is a person
 public class Student extends Person {
 
     private String name;

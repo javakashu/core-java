@@ -1,6 +1,6 @@
 package day6;
 
-public class Staff {
+public class Staff extends Person {
 
     private String name;
     private int age;
