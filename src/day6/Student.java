@@ -1,7 +1,6 @@
 package day6;
 
 
-
 //Student is a person
 public class Student extends Person {
 
@@ -12,6 +11,10 @@ public class Student extends Person {
     private String house;
     private String studentClass;
     private String section;
+
+    public Student(String abc , String bcd){
+
+    }
 
     public int getRollNumber() {
         return rollNumber;

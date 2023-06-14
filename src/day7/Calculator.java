@@ -7,11 +7,9 @@ public class Calculator {
     public static void main(String[] args) {
 
         Calculator cal = new Calculator();
-        cal.add(2147483468,2147483469);
+        cal.add(2,21);
         cal.add(2,3,5);
 
-
-     //   Math.addExact(2147483468,2147483467);
     }
     // function overloading
     public void add(int a , int b){

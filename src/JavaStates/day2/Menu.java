@@ -1,6 +1,6 @@
 package JavaStates.day2;
 
-public class ChaseBankMenu {
+public class Menu {
 
     private long menuId;
     private String menuName;
@@ -8,6 +8,32 @@ public class ChaseBankMenu {
     private boolean isLeaf;
     private long parentMenuId;
     private String slug;
+
+    // Default constructor
+    private Menu(){
+    }
+
+    // Parameterized constructor
+
+    public Menu(long menuId,String menuName, String url, boolean isLeaf, long parentMenuId,String slug){
+        this.menuId= menuId;
+        this.menuName=menuName;
+        this.url=url;
+        this.isLeaf=isLeaf;
+        this.parentMenuId=parentMenuId;
+        this.slug=slug;
+
+    }
+
+    public Menu(long menuId,String menuName, boolean isLeaf, long parentMenuId,String slug){
+        this.menuId= menuId;
+        this.menuName=menuName;
+        this.isLeaf=isLeaf;
+        this.parentMenuId=parentMenuId;
+        this.slug=slug;
+
+    }
+
 
     // setter for menuId
     public void setMenuId(long mId){
@@ -51,7 +77,7 @@ public class ChaseBankMenu {
 
     public static void main(String[] args) {
 
-        ChaseBankMenu personal = new ChaseBankMenu();
+        Menu personal = new Menu();
         personal.menuId = 1;
         personal.menuName = "Personal";
         personal.url = null;
@@ -60,7 +86,7 @@ public class ChaseBankMenu {
         personal.slug = null;
         System.out.println(personal);
 
-        ChaseBankMenu checking = new ChaseBankMenu();
+        Menu checking = new Menu();
         checking.menuId = 2;
         checking.menuName = "Checking";
         checking.url = null;
@@ -69,7 +95,7 @@ public class ChaseBankMenu {
         checking.slug = null;
         System.out.println(checking);
 
-        ChaseBankMenu chooseCheckingAccount = new ChaseBankMenu();
+        Menu chooseCheckingAccount = new Menu();
         chooseCheckingAccount.menuId =3;
         chooseCheckingAccount.menuName ="Choose a Checking Account";
         chooseCheckingAccount.url="https://personal.chase.com/personal/checking";
@@ -78,7 +104,7 @@ public class ChaseBankMenu {
         chooseCheckingAccount.slug=null;
         System.out.println(chooseCheckingAccount);
 
-        ChaseBankMenu business =new ChaseBankMenu();
+        Menu business =new Menu();
         business.menuId =4;
         business.menuName="Business";
         business.url=null;
@@ -87,7 +113,7 @@ public class ChaseBankMenu {
         business.slug="business";
         System.out.println(business);
 
-        ChaseBankMenu bankingSolution =new ChaseBankMenu();
+        Menu bankingSolution =new Menu();
         bankingSolution.menuId=5;
         bankingSolution.menuName="Banking Solution";
         bankingSolution.url="https://www.chase.com/business/banking-solutions-b?jp_cdf=chase.com%7Ctnt-2851b&adobe_mc_sdid=SDID%3D702EDBC7C7C1F194-083C7CF66E7A01F8%7CMCORGID%3DEA673DFC5A2F19060A495C9C%40AdobeOrg%7CTS%3D1684937546&adobe_mc_ref=https%3A%2F%2Fwww.chase.com%2Fbusiness";
@@ -96,7 +122,7 @@ public class ChaseBankMenu {
         bankingSolution.slug="banking solution";
         System.out.println(bankingSolution);
 
-        ChaseBankMenu bankingSolutionChecking =new ChaseBankMenu();
+        Menu bankingSolutionChecking =new Menu();
         bankingSolutionChecking.menuId =6;
         bankingSolutionChecking.menuName="Checking";
         bankingSolutionChecking.url=null;

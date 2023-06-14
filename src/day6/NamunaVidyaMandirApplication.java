@@ -4,7 +4,7 @@ public class NamunaVidyaMandirApplication {
 
     public static void main(String[] args) {
 
-        Student akshu =new Student();
+        Student akshu =new Student("araj","and");
         akshu.setHouse("Green");
         akshu.setSection("A");
         akshu.setStudentClass("Ten");
