@@ -8,9 +8,18 @@ public class ShoppingMallApplication {
 
         entryDoor.personEntered();
         entryDoor.personEntered();
+        entryDoor.personEntered();
+
         exitDoor.personExited();
         exitDoor.personExited();
 
         System.out.println(Door.getCounter());
+
+        if(Door.getCounter()==0){
+            System.out.println("Close the Door");
+        }else {
+            System.out.println("Inform the guards");
+        }
     }
+
 }
