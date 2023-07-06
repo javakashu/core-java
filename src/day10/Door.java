@@ -9,7 +9,7 @@ public class Door {
         this.name = name;
     }
 
-  public  void personEntered(){
+    public  void personEntered(){
         counter += 1; // counter = counter + 1 or ++ counter
 
   }
