@@ -1,6 +1,6 @@
 package ProblemSolving;
 
-public class reverseString {
+public class ReverseString {
     public static StringBuilder reversestring(String name) {
        // StringBuilder temp = new StringBuilder();
         return new StringBuilder(name).reverse().append("y");
