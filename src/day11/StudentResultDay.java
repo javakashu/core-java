@@ -1,7 +1,7 @@
 package day11;
 import java.util.Scanner;
 
-public class StudentResult {
+public class StudentResultDay {
 
 
         // Declaring states
@@ -13,7 +13,7 @@ public class StudentResult {
         private float healthMarks;
 
         // Constructor
-        public StudentResult() {
+        public StudentResultDay() {
         }
 
         // Setters & Getters
