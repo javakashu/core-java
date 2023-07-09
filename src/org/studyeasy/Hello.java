@@ -3,6 +3,8 @@ package org.studyeasy;
 public class Hello {
 
     public static void main(String[] args) {
+
+
      /*    int x = 5, y =10;
 //        boolean x =true;
 //        boolean y = false;
@@ -15,14 +17,14 @@ public class Hello {
 //        int mod = 13 % 2;
 //        System.out.println(mod);
 */
-        int ageOfBoy = 25;
-        int ageOfGirl = 18;
-
-        if ((ageOfBoy >= 21) && (ageOfGirl >= 18)) {
-            System.out.println("They can marry");
-        } else {
-            System.out.println("They cannot marry");
-        }
+//        int ageOfBoy = 25;
+//        int ageOfGirl = 18;
+//
+//        if ((ageOfBoy >= 21) && (ageOfGirl >= 18)) {
+//            System.out.println("They can marry");
+//        } else {
+//            System.out.println("They cannot marry");
+//        }
 
 
         //boolean x = !(4>5);
@@ -46,17 +48,44 @@ public class Hello {
 //        System.out.println(x);
 
 
-        int x = 4;
-        if (x == 5) {
-            System.out.println("X is equal to 5");
-            if (x > 5) {
+//        int x = 4;
+//        if (x == 5) {
+//            System.out.println("X is equal to 5");
+//            if (x > 5) {
+//
+//                System.out.println("X is greater to 5");
+//
+//            } else {
+//                System.out.println(" X is smaller to 5");
+//
+//            }
 
-                System.out.println("X is greater to 5");
 
-            } else {
-                System.out.println(" x is smaller to 5");
+//
+//            if (i == 1 ){
+//                System.out.println("The value of i is 1");
+//            } else if (i == 2 ) {
+//                System.out.println("The value of i is 2");
+//            } else if (i == 3 ) {
+//                System.out.println("The value of i is 3");
+//            }else {
+//                System.out.println("The value of i is other than 1,2,3");
+//            }
+        String name = "AuThor";
+        switch (name.toLowerCase()) {
+            case "author":
+                System.out.println("Akshu");
+                break;
+            case "team":
+                System.out.println("Team studyEasy");
+                break;
+            case "editor":
+                System.out.println("Raj & Dk");
+                break;
+            default:
+                System.out.println("Invalid entry");
+                break;
 
-            }
         }
     }
 }
