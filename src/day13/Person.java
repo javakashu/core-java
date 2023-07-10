@@ -44,17 +44,13 @@ public class Person {
         isVeteran = veteran;
     }
 
-    public static String takeStringInput(String Message) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(Message);
-        String input = " ";
-        try {
-            input = scanner.next();
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input . Please try again");
-            return takeStringInput(Message);
-        }
-
-        return input;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", isVeteran=" + isVeteran +
+                '}';
     }
 }

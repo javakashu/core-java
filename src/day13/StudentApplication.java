@@ -18,11 +18,11 @@ public class StudentApplication {
             String name = scan.nextLine();
             studentPerformance.setName(name);
 
-            float scienceMarks = studentPerformance.takeFloatInput("Enter Science marks:");
-            float mathMarks = studentPerformance.takeFloatInput("Enter math marks:");
-            float englishMarks = studentPerformance.takeFloatInput("Enter english marks:");
-            float socialMarks = studentPerformance.takeFloatInput("Enter social marks:");
-            float historyMarks = studentPerformance.takeFloatInput("Enter history marks:");
+            float scienceMarks = ScannerHelper.takeFloatInput("Enter Science marks:");
+            float mathMarks =    ScannerHelper.takeFloatInput("Enter math marks:");
+            float englishMarks = ScannerHelper.takeFloatInput("Enter english marks:");
+            float socialMarks = ScannerHelper.takeFloatInput("Enter social marks:");
+            float historyMarks = ScannerHelper.takeFloatInput("Enter history marks:");
 
             studentPerformance.setScienceMarks(scienceMarks);
             studentPerformance.setMathMarks(mathMarks);
@@ -60,22 +60,22 @@ public class StudentApplication {
             }
             switch (grade) {
                 case 'A':
-                    System.out.println("Excellent job, " + studentPerformance.getName() + "!");
+                    System.out.println("Excellent job, " + ScannerHelper.getName() + "!");
                     break;
                 case 'B':
-                    System.out.println("Good job, " + studentPerformance.getName() + "!");
+                    System.out.println("Good job, " + ScannerHelper.getName() + "!");
                     break;
                 case 'C':
-                    System.out.println("Well done, " + studentPerformance.getName() + "!");
+                    System.out.println("Well done, " + ScannerHelper.getName() + "!");
                     break;
                 case 'D':
-                    System.out.println("You can do better, " + studentPerformance.getName() + "!");
+                    System.out.println("You can do better, " + ScannerHelper.getName() + "!");
                     break;
                 case 'E':
-                    System.out.println("Try harder next time, " + studentPerformance.getName() + "!");
+                    System.out.println("Try harder next time, " + ScannerHelper.getName() + "!");
                     break;
                 case 'F':
-                    System.out.println("Sorry, " + studentPerformance.getName() + ". You have failed.");
+                    System.out.println("Sorry, " + ScannerHelper.getName() + ". You have failed.");
                     break;
                 default:
                     System.out.println("Invalid grade.");
@@ -83,7 +83,7 @@ public class StudentApplication {
             }
 
 
-            System.out.println(String.format("%s percentage is %f", studentPerformance.getName(), percentage));
+            System.out.println(String.format("%s percentage is %f", ScannerHelper.getName(), percentage));
 
             System.out.print("Do you want to create result of another student? (Y/n)");
             continueText = scan.next();

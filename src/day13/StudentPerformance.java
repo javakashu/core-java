@@ -62,18 +62,6 @@ public class StudentPerformance {
 
 
 
-    public static float takeFloatInput(String Message) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(Message);
-        float input = 0;
-        try {
-            input = scanner.nextFloat();
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input . Please try again");
-            return takeFloatInput(Message);
-        }
 
-        return input;
-    }
 
 }

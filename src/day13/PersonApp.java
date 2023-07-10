@@ -8,26 +8,28 @@ public class PersonApp {
         String continueText = "";
 
         do {
-            Scanner scan = new Scanner(System.in);
-            Scanner newScan = new Scanner(System.in);
+//            System.out.println("Enter your first name:");
+//            String name = scan.nextLine();
+//            person1.setFirstName(name);
 
-            System.out.println("Enter your first name:");
-            String name = scan.nextLine();
-            person1.setFirstName(name);
-
-          //  String firstName = Person.takeStringInput("Enter your first name:");
-            String lastName = Person.takeStringInput("Enter your last name:");
-            String address = Person.takeStringInput("Enter your address:");
+            String firstName = ScannerHelper.takeStringInput("Enter your first name:");
+            String lastName = ScannerHelper.takeStringInput("Enter your last name:");
+            String address = ScannerHelper.takeStringInput("Enter your address:");
+            boolean isVeteran = ScannerHelper.takeBooleanInput("Is a veteran?");
 
            // System.out.print("Enter your first name:");
-           // person1.setFirstName(firstName);
+             person1.setFirstName(firstName);
             person1.setLastName(lastName);
             person1.setAddress(address);
+            person1.setVeteran(isVeteran);
 
-            System.out.println("Congratulations You are approved");
+            System.out.println(person1);
+           if(person1.isVeteran())
+               System.out.println("Congratulations You are approved");
+           else
+               System.out.println("Not approved");
 
-            System.out.print("Do you want to create result of another student? (Y/n)");
-            continueText = scan.next();
+            continueText = ScannerHelper.takeStringInput("Do you want to create result of another student? (Y/n)");
         } while (continueText.equals("Y") || continueText.equals(""));
 
 

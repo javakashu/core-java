@@ -24,10 +24,11 @@ public class Demo {
 
 
     public static boolean isEven(int x) {
-        if (x % 2 == 0) {
-            return true;
-        } else
-            return false;
+//        if (x % 2 == 0) {
+//            return true;
+//        } else
+//            return false;
+        return (x % 2 == 0);
     }
 
     public static int sumOfDigits(int value) {
