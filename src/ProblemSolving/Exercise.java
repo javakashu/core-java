@@ -21,11 +21,16 @@ public class Exercise {
     }
 
     public static void main(String[] args) {
-        String str = "Hello";
-        int N = 5;
+        String str = "dog";
+        int N = 3;
         String concatenatedString = concatenateOddTimes(str, N);
         System.out.println("Concatenated String: " + concatenatedString);
+
+
+
+        }
+
     }
-}
+
 
 
