@@ -117,6 +117,7 @@ public class Student extends Person {
                 ", rollNumber=" + rollNumber +
                 ", address='" + address + '\'' +
                 ", house='" + house + '\'' +
+                ", name='" + super.getName() + '\''+
                 ", studentClass='" + studentClass + '\'' +
                 ", section='" + section + '\'' +
                 '}';
