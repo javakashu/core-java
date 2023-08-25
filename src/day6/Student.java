@@ -23,11 +23,8 @@ public class Student extends Person {
     public Student() {
     }
 
-    public Student(String name, int age, int rollNumber, String address, String house, String studentClass, String section) {
-        this.name = name;
-        this.age = age;
+    public Student(int rollNumber, String house, String studentClass, String section) {
         this.rollNumber = rollNumber;
-        this.address = address;
         this.house = house;
         this.studentClass = studentClass;
         this.section = section;
@@ -104,24 +101,22 @@ public class Student extends Person {
         this.section = section;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNumber=" + rollNumber +
+                ", house='" + house + '\'' +
+                ", studentClass='" + studentClass + '\'' +
+                ", section='" + section + '\'' +
+                '}';
+    }
+
     /**
      * Call this function to get object as a string. Use it for debugging
      *
      * @return all the states if the object in string format
      */
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", rollNumber=" + rollNumber +
-                ", address='" + address + '\'' +
-                ", house='" + house + '\'' +
-                ", name='" + super.getName() + '\''+
-                ", studentClass='" + studentClass + '\'' +
-                ", section='" + section + '\'' +
-                '}';
-    }
+
 
     @Override
     public boolean equals(Object o) {

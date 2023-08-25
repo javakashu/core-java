@@ -12,8 +12,8 @@ public class Operator {
 
         // == and equal function difference
 
-        Student student1 = new Student("Akshu",29,1,"Biratnagar","Green","Ten","A");
-        Student student2 = new Student("Akshu",29,2,"Biratnagar","yellow","Ten","A");
+        Student student1 = new Student(1,"Green","Ten","A");
+        Student student2 = new Student(2,"yellow","Ten","A");
 
         boolean isObjectEqual = student1.equals(student2);
 

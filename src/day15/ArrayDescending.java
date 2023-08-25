@@ -18,4 +18,25 @@ public class ArrayDescending {
         Arrays.sort(strArray, Collections.reverseOrder());
         System.out.println("Sorted String Array (Descending): " + Arrays.toString(strArray));
     }
+
+    public static class Employee {
+
+        // Parent class: Employee
+
+            private String name;
+            private int employeeId;
+            private double salary;
+
+            public Employee(String name, int employeeId, double salary) {
+                this.name = name;
+                this.employeeId = employeeId;
+                this.salary = salary;
+            }
+
+            public void displayDetails() {
+                System.out.println("Employee Name: " + name);
+                System.out.println("Employee ID: " + employeeId);
+                System.out.println("Salary: $" + salary);
+            }
+        }
 }
