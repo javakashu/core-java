@@ -1,6 +1,7 @@
 package day25;
 
 import java.util.ArrayDeque;
+import java.util.PriorityQueue;
 
 public class QueuePractice {
 
@@ -41,49 +42,61 @@ public class QueuePractice {
 //        System.out.println(nameQueue.remove());
 //        System.out.println(nameQueue);
 
-        String syntax = "{{]}";
+//        String syntax = "{{]}";
+//
+//        ArrayDeque<Character> characters = new ArrayDeque<>();
+//        boolean isValid = true;
+//
+//        for (int i = 0; i < syntax.length(); i++) {
+//            char c = syntax.charAt(i);
+//            System.out.println(c);
+//
+//            if ((c == '}' || c == ']') && i == 0) {
+//                isValid = false;
+//                break;
+//            }
+//
+//            if (c == '[' || c == '{') {
+//                characters.addFirst(c);
+//            }
+//
+//            if (c == ']') {
+//                if (characters.peek() == '[') {
+//                    characters.poll();
+//                }
+//            }
+//            if (c == '}') {
+//                if (characters.peek() == '{') {
+//                    characters.poll();
+//                }
+//            }
+//
+//        }
+//
+//        if (!isValid) {
+//            System.out.println("Is not valid");
+//            return;
+//        }
+//
+//        if (characters.size() == 0) {
+//            System.out.println("Is valid");
+//            System.out.println(characters);
+//        } else {
+//            System.out.println("Is not valid");
+//            System.out.println(characters);
+//        }
 
-        ArrayDeque<Character> characters = new ArrayDeque<>();
-        boolean isValid = true;
+        PriorityQueue <String> queue = new PriorityQueue<>();
+        queue.add("Taman");
+        queue.add("Akshu");
+        queue.add("Junu");
 
-        for (int i = 0; i < syntax.length(); i++) {
-            char c = syntax.charAt(i);
-            System.out.println(c);
+        System.out.println(queue);
 
-            if ((c == '}' || c == ']') && i == 0) {
-                isValid = false;
-                break;
-            }
+        System.out.println(queue.peek());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
 
-            if (c == '[' || c == '{') {
-                characters.addFirst(c);
-            }
-
-            if (c == ']') {
-                if (characters.peek() == '[') {
-                    characters.poll();
-                }
-            }
-            if (c == '}') {
-                if (characters.peek() == '{') {
-                    characters.poll();
-                }
-            }
-
-        }
-
-        if (!isValid) {
-            System.out.println("Is not valid");
-            return;
-        }
-
-        if (characters.size() == 0) {
-            System.out.println("Is valid");
-            System.out.println(characters);
-        } else {
-            System.out.println("Is not valid");
-            System.out.println(characters);
-        }
 
     }
 }
