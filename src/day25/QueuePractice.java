@@ -86,16 +86,20 @@ public class QueuePractice {
 //            System.out.println(characters);
 //        }
 
-        PriorityQueue <String> queue = new PriorityQueue<>();
-        queue.add("Taman");
-        queue.add("Akshu");
-        queue.add("Junu");
+//        PriorityQueue <String> queue = new PriorityQueue<>();
+//        queue.add("Taman");
+//        queue.add("Akshu");
+//        queue.add("Junu");
+//
+//        System.out.println(queue);
+//
+//        System.out.println(queue.peek());
+//        System.out.println(queue.poll());
+//        System.out.println(queue.poll());
 
-        System.out.println(queue);
-
-        System.out.println(queue.peek());
-        System.out.println(queue.poll());
-        System.out.println(queue.poll());
+        String og = "opengenus";
+        String og2 =new String(og);
+        System.out.println((og == og2) + " "+(og.equals(og2)));
 
 
     }
