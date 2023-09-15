@@ -14,6 +14,10 @@ public class Student implements Comparable <Student> {
         this.fee = fee;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public double getFee() {
         return fee;
     }
