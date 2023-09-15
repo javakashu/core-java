@@ -1,16 +1,38 @@
 package day27;
 
+
 public class Demo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        Runnable obj1 = new A();
-        Runnable obj2 = new B();
+        Counter c = new Counter();
+        Runnable obj1 = () -> {
+            for (int i = 1; i<= 10000; i++ ){
+                c.increment();
+            }
+        };
+
+
+        Runnable obj2 = () -> {
+
+            for (int i = 1; i<= 10000; i++ ){
+                c.increment();
+            }
+        };
+
 
         Thread t1 = new Thread(obj1);
         Thread t2 = new Thread(obj2);
 
         t1.start();
         t2.start();
+
+        System.out.println(t1.getState());
+        System.out.println(t2.getState());
+
+        t1.join();
+        t2.join();
+
+        System.out.println(c.count);
     }
 }
