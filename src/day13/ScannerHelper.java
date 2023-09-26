@@ -68,7 +68,7 @@ public class ScannerHelper {
         String thirdname = new String("akshu");
 
         thirdname.concat("java");
-        thirdname = thirdname.concat("python");
+        thirdname = thirdname.concat("java");
         System.out.println(thirdname);
         // System.out.println(thirdname);
 
